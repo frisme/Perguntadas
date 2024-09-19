@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Perguntadas.GamePage"
+             BackgroundColor="#2E2E2E">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Logo do Jogo -->
+        <Image Source="logo_jogo.png" 
+               HeightRequest="150"
+               HorizontalOptions="Center" />
+
+        <!-- Pergunta -->
+        <Label x:Name="labelPergunta"
+               Text="Pergunta aqui"
+               FontSize="Large"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <!-- Respostas (Botões) -->
+        <Button Text="Resposta 1"
+                x:Name="buttonResposta01"
+                Clicked="OnRespostaClicked"
+                BackgroundColor="#3B82F6"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                CornerRadius="20" />
+
+        <Button Text="Resposta 2"
+                x:Name="buttonResposta02"
+                Clicked="OnRespostaClicked"
+                BackgroundColor="#3B82F6"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                CornerRadius="20" />
+
+        <Button Text="Resposta 3"
+                x:Name="buttonResposta03"
+                Clicked="OnRespostaClicked"
+                BackgroundColor="#3B82F6"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                CornerRadius="20" />
+
+        <Button Text="Resposta 4"
+                x:Name="buttonResposta04"
+                Clicked="OnRespostaClicked"
+                BackgroundColor="#3B82F6"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                CornerRadius="20" />
+            
+        <Button Text="Resposta 5"
+                x:Name="buttonResposta05"
+                Clicked="OnRespostaClicked"
+                BackgroundColor="#3B82F6"
+                TextColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                CornerRadius="20" />
+
+        <!-- Menus de Navegação -->
+        <HorizontalStackLayout HorizontalOptions="Center" Padding="20" Spacing="10">
+            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100" />
+            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100" />
+            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
