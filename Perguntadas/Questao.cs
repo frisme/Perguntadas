@@ -1,6 +1,7 @@
 namespace Perguntadas;
 
-public class Questao{
+public class Questao
+{
 
     public string Pergunta;
     public string Resposta1;
@@ -20,11 +21,13 @@ public class Questao{
     private Button ButtonResposta4;
     private Button ButtonResposta5;
 
-    public Questao(){
+    public Questao()
+    {
         
     }
 
-    public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
+    public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    {
         LabelPergunta = labelpergunta;
         ButtonResposta1 = button1;
         ButtonResposta2 = button2;
@@ -33,7 +36,8 @@ public class Questao{
         ButtonResposta5 = button5;
     }
 
-    public void ConfiguraEstruturaDesenho (Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5){
+    public void ConfiguraEstruturaDesenho (Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    {
         LabelPergunta = labelpergunta;
         ButtonResposta1 = button1;
         ButtonResposta2 = button2;
@@ -42,7 +46,8 @@ public class Questao{
         ButtonResposta5 = button5;
     }
 
-    public void Desenhar(){
+    public void Desenhar()
+    {
         LabelPergunta.Text = Pergunta;
         ButtonResposta1.Text = Resposta1;
         ButtonResposta2.Text = Resposta2;
@@ -51,7 +56,8 @@ public class Questao{
         ButtonResposta5.Text = Resposta5;
     }
 
-    private Button QualButton(int r){
+    private Button QualButton(int r)
+    {
         if(r == 1){
             return ButtonResposta1;
         }
@@ -72,13 +78,16 @@ public class Questao{
         }
     }
 
-    public bool VerificaResposta(int rr){
-        if(RespostaCerta == rr){
+    public bool VerificaResposta(int rr)
+    {
+        if(RespostaCerta == rr)
+        {
             var button = QualButton(rr);
             button.BackgroundColor = Colors.Green; //"#a1c9ae";
             return true;
         }
-        else{
+        else
+        {
             var buttonCorreto = QualButton(RespostaCerta);
             var buttonIncorreto = QualButton(rr);
             buttonCorreto.BackgroundColor = Colors.Green; //"#a1c9ae";

@@ -22,7 +22,7 @@
         <!-- Respostas (Botões) -->
         <Button Text="Resposta 1"
                 x:Name="buttonResposta01"
-                Clicked="OnRespostaClicked"
+                Clicked="OnRespostaClicked01"
                 BackgroundColor="#3B82F6"
                 TextColor="White"
                 HorizontalOptions="Fill"
@@ -31,7 +31,7 @@
 
         <Button Text="Resposta 2"
                 x:Name="buttonResposta02"
-                Clicked="OnRespostaClicked"
+                Clicked="OnRespostaClicked02"
                 BackgroundColor="#3B82F6"
                 TextColor="White"
                 HorizontalOptions="Fill"
@@ -40,7 +40,7 @@
 
         <Button Text="Resposta 3"
                 x:Name="buttonResposta03"
-                Clicked="OnRespostaClicked"
+                Clicked="OnRespostaClicked03"
                 BackgroundColor="#3B82F6"
                 TextColor="White"
                 HorizontalOptions="Fill"
@@ -49,7 +49,7 @@
 
         <Button Text="Resposta 4"
                 x:Name="buttonResposta04"
-                Clicked="OnRespostaClicked"
+                Clicked="OnRespostaClicked04"
                 BackgroundColor="#3B82F6"
                 TextColor="White"
                 HorizontalOptions="Fill"
@@ -58,7 +58,7 @@
             
         <Button Text="Resposta 5"
                 x:Name="buttonResposta05"
-                Clicked="OnRespostaClicked"
+                Clicked="OnRespostaClicked05"
                 BackgroundColor="#3B82F6"
                 TextColor="White"
                 HorizontalOptions="Fill"
@@ -67,9 +67,9 @@
 
         <!-- Menus de Navegação -->
         <HorizontalStackLayout HorizontalOptions="Center" Padding="20" Spacing="10">
-            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100" />
-            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100" />
-            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100" />
+            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100"/>
+            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100"/>
+            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100"/>
         </HorizontalStackLayout>
 
     </VerticalStackLayout>

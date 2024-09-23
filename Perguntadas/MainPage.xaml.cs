@@ -6,7 +6,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-	public void Douglas()
+	public void Douglas(object sender, EventArgs e)
 	{
 		Navigation.PushAsync(new GamePage());
 	}
