@@ -67,9 +67,19 @@
 
         <!-- Menus de Navegação -->
         <HorizontalStackLayout HorizontalOptions="Center" Padding="20" Spacing="10">
-            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100"/>
-            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100"/>
-            <Button Text="MENU" BackgroundColor="#808080" TextColor="White" WidthRequest="100"/>
+            <Button Text="MENU" 
+                    BackgroundColor="#808080"
+                    Clicked="Julim" 
+                    TextColor="White" 
+                    WidthRequest="100"/>
+            <Button Text="MENU" 
+                    BackgroundColor="#808080" 
+                    TextColor="White" 
+                    WidthRequest="100"/>
+            <Button Text="MENU" 
+                    BackgroundColor="#808080" 
+                    TextColor="White" 
+                    WidthRequest="100"/>
         </HorizontalStackLayout>
 
     </VerticalStackLayout>

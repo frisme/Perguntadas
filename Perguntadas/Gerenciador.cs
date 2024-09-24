@@ -18,7 +18,7 @@ public class Gerenciador{
         q1.Resposta1 = "Bolsonaro";
         q1.Resposta2 = "13";
         q1.Resposta3 = "4";
-        q1.Resposta4 = "6";
+        q1.Resposta4 = "Canteiro de árvore (sem árvore)";
         q1.Resposta5 = "0";
 
         q1.RespostaCerta = 3;
@@ -27,7 +27,7 @@ public class Gerenciador{
 
         var q2 = new Questao();
         q2.Pergunta = "Qual a capital da França?";
-        q2.Resposta1 = "Berlim";
+        q2.Resposta1 = "Achillea millefolium L.";
         q2.Resposta2 = "Paris";
         q2.Resposta3 = "Madrid";
         q2.Resposta4 = "Lisboa";
@@ -43,7 +43,7 @@ public class Gerenciador{
         q3.Resposta2 = "Azul";
         q3.Resposta3 = "Amarelo";
         q3.Resposta4 = "Vermelho";
-        q3.Resposta5 = "Preto";
+        q3.Resposta5 = "TrEs-4";
 
         q3.RespostaCerta = 2;
         q3.ConfiguraEstruturaDesenho(labelPergunta, buttonResposta01, buttonResposta02, buttonResposta03, buttonResposta04, buttonResposta05);
@@ -52,7 +52,7 @@ public class Gerenciador{
         var q4 = new Questao();
         q4.Pergunta = "Qual é o maior planeta do sistema solar?";
         q4.Resposta1 = "Terra";
-        q4.Resposta2 = "Marte";
+        q4.Resposta2 = "TOI-1452 b";
         q4.Resposta3 = "Júpiter";
         q4.Resposta4 = "Saturno";
         q4.Resposta5 = "Netuno";
@@ -65,7 +65,7 @@ public class Gerenciador{
         q5.Pergunta = "Quem escreveu 'Dom Casmurro'?";
         q5.Resposta1 = "Machado de Assis";
         q5.Resposta2 = "José de Alencar";
-        q5.Resposta3 = "Jorge Amado";
+        q5.Resposta3 = "HD 56414";
         q5.Resposta4 = "Clarice Lispector";
         q5.Resposta5 = "Graciliano Ramos";
 
@@ -75,7 +75,7 @@ public class Gerenciador{
 
         var q6 = new Questao();
         q6.Pergunta = "Quantos continentes existem?";
-        q6.Resposta1 = "5";
+        q6.Resposta1 = "Hippopotamus amphibius";
         q6.Resposta2 = "6";
         q6.Resposta3 = "7";
         q6.Resposta4 = "4";
@@ -90,7 +90,7 @@ public class Gerenciador{
         q7.Resposta1 = "H2O";
         q7.Resposta2 = "O2";
         q7.Resposta3 = "CO2";
-        q7.Resposta4 = "NaCl";
+        q7.Resposta4 = "Rubéola e síndrome da rubéola congênita";
         q7.Resposta5 = "C6H12O6";
 
         q7.RespostaCerta = 1;
@@ -103,7 +103,7 @@ public class Gerenciador{
         q8.Resposta2 = "Mandarim";
         q8.Resposta3 = "Espanhol";
         q8.Resposta4 = "Francês";
-        q8.Resposta5 = "Árabe";
+        q8.Resposta5 = "Tétano neonatal";
 
         q8.RespostaCerta = 2;
         q8.ConfiguraEstruturaDesenho(labelPergunta, buttonResposta01, buttonResposta02, buttonResposta03, buttonResposta04, buttonResposta05);
@@ -115,7 +115,7 @@ public class Gerenciador{
         q9.Resposta2 = "Leonardo da Vinci";
         q9.Resposta3 = "Pablo Picasso";
         q9.Resposta4 = "Claude Monet";
-        q9.Resposta5 = "Michelangelo";
+        q9.Resposta5 = "Fenilcetonúria";
 
         q9.RespostaCerta = 2;
         q9.ConfiguraEstruturaDesenho(labelPergunta, buttonResposta01, buttonResposta02, buttonResposta03, buttonResposta04, buttonResposta05);
@@ -123,7 +123,7 @@ public class Gerenciador{
 
         var q10 = new Questao();
         q10.Pergunta = "Qual é o maior oceano do mundo?";
-        q10.Resposta1 = "Oceano Atlântico";
+        q10.Resposta1 = "Fibrose Cística";
         q10.Resposta2 = "Oceano Índico";
         q10.Resposta3 = "Oceano Pacífico";
         q10.Resposta4 = "Oceano Ártico";

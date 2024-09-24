@@ -5,7 +5,31 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black">
 
-    <Button Text="AAAAAAAI"
-            Clicked = "Douglas"/>
+    <Grid>
+    
+        <Grid.RowDefinitions>
+           <RowDefinition Height="AUTO"/>
+           <RowDefinition Height="AUTO"/>
+           <RowDefinition Height="AUTO"/>
+           <RowDefinition Height="AUTO"/>
+        </Grid.RowDefinitions>
+
+
+          <Image Source="picpayshow.jpg"
+                 Grid.RowSpan="0"/>
+
+          <Button Text="Jogar"
+                BackgroundColor="LightGray"
+                Clicked="Douglas"
+                HeightRequest="70"
+                WidthRequest="90"
+                Grid.Row="1"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+    
+    
+    
+    
+    </Grid>
 
 </ContentPage>

@@ -30,4 +30,9 @@ public partial class GamePage : ContentPage
     void OnRespostaClicked05(object sender, EventArgs e){
         gerenciador.VerificaCorreta(5);
     }
+
+    public void Julim(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new MainPage());
+	}
 }
