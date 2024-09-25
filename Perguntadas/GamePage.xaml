@@ -4,83 +4,188 @@
              x:Class="Perguntadas.GamePage"
              BackgroundColor="#2E2E2E">
 
-    <VerticalStackLayout Padding="20" Spacing="15">
+        <ScrollView>
+                <Grid>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                                <RowDefinition Height="AUTO"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="AUTO"/>
+                                <ColumnDefinition Width="AUTO"/>
+                                <ColumnDefinition Width="AUTO"/>
+                        </Grid.ColumnDefinitions>
+                        <!--
+                        <Frame IsVisible="True"
+                               x:Name="frameGameOver"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.RowSpan="10"
+                               Grid.ColumnSpan="3"
+                               Margin="20"
+                               BackgroundColor="Black">
+                                <Grid>
+                                
+                                        <Grid.RowDefinitions>
+                                                <RowDefinition Height="AUTO"/>
+                                                <RowDefinition Height="AUTO"/>
+                                        </Grid.RowDefinitions>
 
-        <!-- Logo do Jogo -->
-        <Image Source="logo_jogo.png" 
-               HeightRequest="150"
-               HorizontalOptions="Center" />
+                                        <Label Text="Você perdeu"
+                                               TextColor="White"
+                                               FontFamily="StalystaPersonal"
+                                               Grid.Row="0"/>
+                                        
+                                        <Button Text="Recomeçar"
+                                                TextColor="White"
+                                                BorderColor="White"
+                                                BorderWidth="1"
+                                                Grid.Row="1"/>
+                                </Grid>
+                        </Frame>
+                        -->           
+                        <Image Source="show_do_milhao.png"
+                               Aspect="AspectFill"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"/>
 
-        <!-- Pergunta -->
-        <Label x:Name="labelPergunta"
-               Text="Pergunta aqui"
-               FontSize="Large"
-               TextColor="White"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+                        <Label Text="Pontuação:"
+                               TextColor="White" 
+                               FontSize="16"
+                               FontFamily="StalystaPersonal"
+                               Margin="10, 2, 10, 15"
+                               x:Name="labelPontuacao"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"/>
 
-        <!-- Respostas (Botões) -->
-        <Button Text="Resposta 1"
-                x:Name="buttonResposta01"
-                Clicked="OnRespostaClicked01"
-                BackgroundColor="#3B82F6"
-                TextColor="White"
-                HorizontalOptions="Fill"
-                VerticalOptions="Start"
-                CornerRadius="20" />
+                        <Label Text="Nível:"
+                               TextColor="White" 
+                               FontSize="16"
+                               FontFamily="StalystaPersonal"
+                               Margin="10,2, 10, 15"
+                               x:Name="labelNivel" 
+                               Grid.Row="1"
+                               Grid.Column="2"/>
 
-        <Button Text="Resposta 2"
-                x:Name="buttonResposta02"
-                Clicked="OnRespostaClicked02"
-                BackgroundColor="#3B82F6"
-                TextColor="White"
-                HorizontalOptions="Fill"
-                VerticalOptions="Start"
-                CornerRadius="20" />
+                        <Label Text="Pergunta:" 
+                               TextColor="White" 
+                               FontSize="18"
+                               FontFamily="StalystaPersonal"
+                               Margin="10,5"
+                               Grid.Row="2"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"/>
+                        
+                        <Frame BackgroundColor="Black"
+                               Margin="10,5"
+                               Grid.Row="3"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3">
+                                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel eros neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nec dui sapien. Aenean in purus justo." 
+                                       x:Name="labelPergunta"
+                                       HorizontalTextAlignment="Center"
+                                       TextColor="White" 
+                                       FontSize="16"
+                                       MaximumWidthRequest="500"
+                                       FontFamily="StalystaPersonal"/>
+                        </Frame>
 
-        <Button Text="Resposta 3"
-                x:Name="buttonResposta03"
-                Clicked="OnRespostaClicked03"
-                BackgroundColor="#3B82F6"
-                TextColor="White"
-                HorizontalOptions="Fill"
-                VerticalOptions="Start"
-                CornerRadius="20" />
+                        <Button Text="Praesent sit amet sollicitudin elit"
+                                x:Name="buttonResposta01"
+                                Clicked="OnRespostaClicked01"
+                                BackgroundColor="Black"
+                                BorderColor="White"
+                                BorderWidth="1"
+                                Margin="10,5"
+                                TextColor="White"
+                                FontSize="12"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <Button Text="Resposta 4"
-                x:Name="buttonResposta04"
-                Clicked="OnRespostaClicked04"
-                BackgroundColor="#3B82F6"
-                TextColor="White"
-                HorizontalOptions="Fill"
-                VerticalOptions="Start"
-                CornerRadius="20" />
-            
-        <Button Text="Resposta 5"
-                x:Name="buttonResposta05"
-                Clicked="OnRespostaClicked05"
-                BackgroundColor="#3B82F6"
-                TextColor="White"
-                HorizontalOptions="Fill"
-                VerticalOptions="Start"
-                CornerRadius="20" />
+                        <Button Text="Donec in ante vel dui vehicula hendrerit"
+                                x:Name="buttonResposta02"
+                                Clicked="OnRespostaClicked02"
+                                BackgroundColor="Black"
+                                BorderColor="White"
+                                BorderWidth="1"
+                                Margin="10,5"
+                                TextColor="White"
+                                FontSize="12"
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
+                                
+                        <Button Text="Nulla tincidunt est eget sollicitudin dapibus"
+                                x:Name="buttonResposta03"
+                                Clicked="OnRespostaClicked03"
+                                BackgroundColor="Black"
+                                BorderColor="White"
+                                BorderWidth="1"
+                                Margin="10,5"
+                                TextColor="White"
+                                FontSize="12"
+                                Grid.Row="6"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
+                                
+                        <Button Text="Etiam imperdiet ex non lorem commodo, in porta nulla elementum"
+                                x:Name="buttonResposta04"
+                                Clicked="OnRespostaClicked04"
+                                BackgroundColor="Black"
+                                BorderColor="White"
+                                BorderWidth="1"
+                                Margin="10,5"
+                                TextColor="White"
+                                FontSize="12"
+                                Grid.Row="7"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
+                                
+                        <Button Text="Nunc posuere urna vitae felis feugiat, in lobortis nisi accumsan"
+                                x:Name="buttonResposta05"
+                                Clicked="OnRespostaClicked05"
+                                BackgroundColor="Black"
+                                BorderColor="White"
+                                BorderWidth="1"
+                                Margin="10,5"
+                                TextColor="White"
+                                FontSize="12"
+                                Grid.Row="8"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <!-- Menus de Navegação -->
-        <HorizontalStackLayout HorizontalOptions="Center" Padding="20" Spacing="10">
-            <Button Text="MENU" 
-                    BackgroundColor="#808080"
-                    Clicked="Julim" 
-                    TextColor="White" 
-                    WidthRequest="100"/>
-            <Button Text="MENU" 
-                    BackgroundColor="#808080" 
-                    TextColor="White" 
-                    WidthRequest="100"/>
-            <Button Text="MENU" 
-                    BackgroundColor="#808080" 
-                    TextColor="White" 
-                    WidthRequest="100"/>
-        </HorizontalStackLayout>
-
-    </VerticalStackLayout>
+                        <Button BackgroundColor="Black"
+                                ImageSource="universitario.png"
+                                TextColor="Black"
+                                Margin="10, 10, 5,10"
+                                Grid.Row="9"
+                                Grid.Column="0"/>
+                                
+                        <Button BackgroundColor="Black"
+                                ImageSource="right_arrow.png"
+                                MaximumWidthRequest="64"
+                                TextColor="Black"
+                                Margin="5,10"
+                                Grid.Row="9"
+                                Grid.Column="1"/>
+                                
+                        <Button BackgroundColor="Black"
+                                ImageSource="cartas.png"
+                                TextColor="Black"
+                                Margin="5, 10, 10, 10"
+                                Grid.Row="9"
+                                Grid.Column="2"/>
+                </Grid>
+        </ScrollView>
 </ContentPage>

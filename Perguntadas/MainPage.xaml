@@ -16,7 +16,8 @@
 
 
           <Image Source="picpayshow.jpg"
-                 Grid.RowSpan="0"/>
+                 Grid.RowSpan="4"
+                 Aspect="AspectFill"/>
 
           <Button Text="Jogar"
                 BackgroundColor="LightGray"
