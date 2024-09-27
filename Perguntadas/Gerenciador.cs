@@ -2,16 +2,19 @@ using Perguntadas;
 
 namespace Perguntadas;
 
-public class Gerenciador{
+public class Gerenciador
+{
 
     List<Questao> listaQuestoes = new List<Questao>();
     List<int> listaQuestaoRespondida = new List<int>();
     Questao questaoAtual;
-    public Gerenciador(Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05){
+    public Gerenciador(Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05)
+    {
         CriarQuestoes(labelPergunta, buttonResposta01, buttonResposta02, buttonResposta03, buttonResposta04, buttonResposta05);
     }
 
-    void CriarQuestoes(Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05){
+    void CriarQuestoes(Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05)
+    {
         var q1 = new Questao();
 
         q1.Pergunta = "Quanto é 2 + 2";
@@ -1214,7 +1217,8 @@ public class Gerenciador{
         listaQuestoes.Add(q100);
     }
 
-    public void ProximaQuestao(){
+    public void ProximaQuestao()
+    {
         var numRandom = Random.Shared.Next(0, listaQuestoes.Count- 1);
 
         while(listaQuestaoRespondida.Contains(numRandom)){

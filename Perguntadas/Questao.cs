@@ -96,4 +96,13 @@ public class Questao
             return false;
         }
     }
+    
+    public class Questao : IEquatable<Questao>
+    {
+        public bool Equals(Questao q)
+        {
+            return this.Nivel == q.Nivel;
+        }
+    }
+
 }
