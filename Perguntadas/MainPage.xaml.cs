@@ -10,4 +10,10 @@ public partial class MainPage : ContentPage
 	{
 		Navigation.PushAsync(new GamePage());
 	}
+	private async Task<bool> Douglas()
+    {
+      await DisplayAlert( "Atenção", "O jogo vai começar, cuidado com seu saldo bancário.", "OK");
+            return false;
+	}
+
 }

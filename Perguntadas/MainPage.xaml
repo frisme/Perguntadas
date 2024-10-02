@@ -8,16 +8,14 @@
     <Grid>
     
         <Grid.RowDefinitions>
-           <RowDefinition Height="AUTO"/>
-           <RowDefinition Height="AUTO"/>
-           <RowDefinition Height="AUTO"/>
-           <RowDefinition Height="AUTO"/>
+       <RowDefinition Height="*"/>
+       <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
 
 
-          <Image Source="picpayshow.jpg"
-                 Grid.RowSpan="4"
-                 Aspect="AspectFill"/>
+          <Image Source="papagaio.png"
+                 Grid.RowSpan="2"
+                 Aspect="Fill"/>
 
           <Button Text="Jogar"
                 BackgroundColor="LightGray"
