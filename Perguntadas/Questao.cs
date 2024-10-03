@@ -15,11 +15,11 @@ public class Questao
 
     private Label LabelPergunta;
 
-    private Button ButtonResposta1;
-    private Button ButtonResposta2;
-    private Button ButtonResposta3;
-    private Button ButtonResposta4;
-    private Button ButtonResposta5;
+    private Button ButtonResposta01;
+    private Button ButtonResposta02;
+    private Button ButtonResposta03;
+    private Button ButtonResposta04;
+    private Button ButtonResposta05;
 
     public Questao()
     {
@@ -29,49 +29,49 @@ public class Questao
     public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
     {
         LabelPergunta = labelpergunta;
-        ButtonResposta1 = button1;
-        ButtonResposta2 = button2;
-        ButtonResposta3 = button3;
-        ButtonResposta4 = button4;
-        ButtonResposta5 = button5;
+        ButtonResposta01 = button1;
+        ButtonResposta02 = button2;
+        ButtonResposta03 = button3;
+        ButtonResposta04 = button4;
+        ButtonResposta05 = button5;
     }
 
     public void ConfiguraEstruturaDesenho (Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
     {
         LabelPergunta = labelpergunta;
-        ButtonResposta1 = button1;
-        ButtonResposta2 = button2;
-        ButtonResposta3 = button3;
-        ButtonResposta4 = button4;
-        ButtonResposta5 = button5;
+        ButtonResposta01 = button1;
+        ButtonResposta02 = button2;
+        ButtonResposta03 = button3;
+        ButtonResposta04 = button4;
+        ButtonResposta05 = button5;
     }
 
     public void Desenhar()
     {
         LabelPergunta.Text = Pergunta;
-        ButtonResposta1.Text = Resposta1;
-        ButtonResposta2.Text = Resposta2;
-        ButtonResposta3.Text = Resposta3;
-        ButtonResposta4.Text = Resposta4;
-        ButtonResposta5.Text = Resposta5;
+        ButtonResposta01.Text = Resposta1;
+        ButtonResposta02.Text = Resposta2;
+        ButtonResposta03.Text = Resposta3;
+        ButtonResposta04.Text = Resposta4;
+        ButtonResposta05.Text = Resposta5;
     }
 
     private Button QualButton(int r)
     {
         if(r == 1){
-            return ButtonResposta1;
+            return ButtonResposta01;
         }
         else if(r == 2){
-            return ButtonResposta2;
+            return ButtonResposta02;
         }
         else if (r == 3){
-            return ButtonResposta3;
+            return ButtonResposta03;
         }
         else if (r == 4){
-            return ButtonResposta4;
+            return ButtonResposta04;
         }
         else if (r == 5 ){
-            return ButtonResposta5;
+            return ButtonResposta05;
         }
         else{
             return null;

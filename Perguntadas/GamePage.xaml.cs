@@ -11,23 +11,28 @@ public partial class GamePage : ContentPage
         gerenciador.ProximaQuestao();
     }
 
-    void OnRespostaClicked01(object sender, EventArgs args){
+    void OnRespostaClicked01(object sender, EventArgs args)
+    {
         gerenciador.VerificaCorreta(1);
     }
 
-    void OnRespostaClicked02(object sender, EventArgs args){
+    void OnRespostaClicked02(object sender, EventArgs args)
+    {
         gerenciador.VerificaCorreta(2);
     }
     
-    void OnRespostaClicked03(object sender, EventArgs args){
+    void OnRespostaClicked03(object sender, EventArgs args)
+    {
         gerenciador.VerificaCorreta(3);
     }
     
-    void OnRespostaClicked04(object sender, EventArgs args){
+    void OnRespostaClicked04(object sender, EventArgs args)
+    {
         gerenciador.VerificaCorreta(4);
     }
     
-    void OnRespostaClicked05(object sender, EventArgs e){
+    void OnRespostaClicked05(object sender, EventArgs e)
+    {
         gerenciador.VerificaCorreta(5);
     }
 

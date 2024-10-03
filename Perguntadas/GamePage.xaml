@@ -3,134 +3,139 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Perguntadas.GamePage"
              BackgroundColor="#2E2E2E">
+        <ScrollView>
+                <Grid>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
-        <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+                        <!-- Imagem -->
+                        <Image Source="social.png"
+                               HeightRequest="100"
+                               Grid.Row="0"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"
+                               Aspect="Fill"/>
 
-        <!-- Imagem -->
-        <Image Source="social.png"
-               HeightRequest="100"
-               Grid.Row="0"
-               Grid.Column="0"
-               Grid.ColumnSpan="3" 
-               Aspect="Fill"/>
+                        <!-- Pergunta -->
+                <Frame Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"> 
+                               
+                        <Label x:Name="labelPergunta"
+                               BackgroundColor="black"
+                               HorizontalTextAlignment="Center"
+                               Margin="20,0,20,20"
+                               Text="Sua pergunta aqui"
+                               TextColor="white"
+                               WidthRequest="600"
+                               FontSize="27"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"/>
+                </Frame>
+                        <!-- Botões de resposta -->
+                        <Button x:Name="buttonResposta01"
+                                Clicked="OnRespostaClicked01"
+                                WidthRequest="600"
+                                BackgroundColor="#EDD30E"
+                                FontSize="12"
+                                Text="Opção 1"
+                                Margin="0,0,0,10"
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <!-- Pergunta -->
-        <Label x:Name="labelPergunta"
-               BackgroundColor="black"
-               HorizontalTextAlignment="Center"
-               Margin="20,0,20,20"
-               Text="Sua pergunta aqui"
-               TextColor="white"
-               WidthRequest="600"
-               FontSize="27"
-               Grid.Row="1"
-               Grid.Column="0"
-               Grid.ColumnSpan="3" />
+                        <Button x:Name="buttonResposta02"
+                                Clicked="OnRespostaClicked02"
+                                WidthRequest="600"
+                                BackgroundColor="#EDD30E"
+                                FontSize="12"
+                                Text="Opção 2"
+                                Margin="0,0,0,10"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <!-- Botões de resposta -->
-        <Button x:Name="buttonResposta01"
-                Clicked="OnRespostaClicked01"
-                WidthRequest="600"
-                BackgroundColor="#EDD30E"
-                FontSize="12"
-                Text="Opção 1"
-                Margin="0,0,0,10"
-                Grid.Row="2"
-                Grid.Column="0"
-                Grid.ColumnSpan="3" />
+                        <Button x:Name="buttonResposta03"
+                                Clicked="OnRespostaClicked03"
+                                WidthRequest="600"
+                                BackgroundColor="#EDD30E"
+                                FontSize="12"
+                                Text="Opção 3"
+                                Margin="0,0,0,10"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="buttonResposta02"
-                 Clicked="OnRespostaClicked02"
-                WidthRequest="600"
-                BackgroundColor="#EDD30E"
-                FontSize="12"
-                Text="Opção 2"
-                Margin="0,0,0,10"
-                Grid.Row="3"
-                Grid.Column="0"
-                Grid.ColumnSpan="3" />
+                        <Button x:Name="buttonResposta04"
+                                Clicked="OnRespostaClicked04"
+                                WidthRequest="600"
+                                BackgroundColor="#EDD30E"
+                                FontSize="12"
+                                Text="Opção 4"
+                                Margin="0,0,0,10"
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="buttonResposta03"
-                Clicked="OnRespostaClicked03"
-                WidthRequest="600"
-                BackgroundColor="#EDD30E"
-                FontSize="12"
-                Text="Opção 3"
-                Margin="0,0,0,10"
-                Grid.Row="4"
-                Grid.Column="0"
-                Grid.ColumnSpan="3" />
+                        <Button x:Name="buttonResposta05"
+                                Clicked="OnRespostaClicked05"
+                                WidthRequest="600"
+                                BackgroundColor="#EDD30E"
+                                FontSize="12"
+                                Text="Opção 5"
+                                Margin="0,0,0,10"
+                                Grid.Row="6"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="buttonResposta04"
-                Clicked="OnRespostaClicked04"
-                WidthRequest="600"
-                BackgroundColor="#EDD30E"
-                FontSize="12"
-                Text="Opção 4"
-                Margin="0,0,0,10"
-                Grid.Row="5"
-                Grid.Column="0"
-                Grid.ColumnSpan="3" />
+                        <!-- Botões de ajuda -->
+                        <Button x:Name="ButtonCartas"
+                                Clicked="OnRespostaClicked01"
+                                WidthRequest="200"
+                                BackgroundColor="Blue"
+                                FontSize="12"
+                                Text="Agência Nacional dos Idosos"
+                                BorderColor="#D4D6D5"
+                                BorderWidth="2"
+                                Grid.Row="7"
+                                Grid.Column="0"/>
 
-        <Button x:Name="buttonResposta05"
-                Clicked="OnRespostaClicked05"
-                WidthRequest="600"
-                BackgroundColor="#EDD30E"
-                FontSize="12"
-                Text="Opção 5"
-                Margin="0,0,0,10"
-                Grid.Row="6"
-                Grid.Column="0"
-                Grid.ColumnSpan="3" />
+                        <Button x:Name="ButtonUniversitários"
+                                Clicked="OnRespostaClicked02"
+                                BorderColor="#D4D6D5"
+                                BorderWidth="2"
+                                WidthRequest="200"
+                                BackgroundColor="Blue"
+                                FontSize="12"
+                                Text="Desempregados de Luto"
+                                Grid.Row="7"
+                                Grid.Column="1"/>
 
-        <!-- Botões de ajuda -->
-        <Button x:Name="ButtonCartas"
-                Clicked="OnRespostaClicked01"
-                WidthRequest="200"
-                BackgroundColor="Blue"
-                FontSize="12"
-                Text="Agência Nacional dos Idosos"
-                BorderColor="#D4D6D5"
-                BorderWidth="2"
-                Grid.Row="7"
-                Grid.Column="0" />
-
-        <Button x:Name="ButtonUniversitários"
-                Clicked="OnRespostaClicked02"
-                BorderColor="#D4D6D5"
-                BorderWidth="2"
-                WidthRequest="200"       
-                BackgroundColor="Blue"
-                FontSize="12"
-                Text="Desempregados de Luto"
-                Grid.Row="7"
-                Grid.Column="1" />
-
-        <Button x:Name="ButtonTiraum"
-                Clicked="OnRespostaClicked03"
-                BorderColor="#D4D6D5"
-                BorderWidth="2"
-                WidthRequest="200"
-                BackgroundColor="Blue"
-                FontSize="12"
-                Text="Pedir ajuda ao Sandro Curió"
-                Grid.Row="7"
-                Grid.Column="2" />
-    </Grid>
+                        <Button x:Name="ButtonTiraum"
+                                Clicked="OnRespostaClicked03"
+                                BorderColor="#D4D6D5"
+                                BorderWidth="2"
+                                WidthRequest="200"
+                                BackgroundColor="Blue"
+                                FontSize="12"
+                                Text="Pedir ajuda ao Sandro Curió"
+                                Grid.Row="7"
+                                Grid.Column="2"/>
+                </Grid>
+        </ScrollView>
 </ContentPage>
