@@ -5,7 +5,7 @@ namespace Perguntadas;
 public class Gerenciador
 {
     List<Questao> listaTodasQuestoes = new List<Questao>();
-    List<Questao> listaTodasQuestaoRespondidas = new List<Questao>();
+    List<int> listaTodasQuestaoRespondidas = new List<int>();
     Questao questaoAtual;
 
     public int Pontuacao{ get; private set; }
@@ -19,9 +19,11 @@ public class Gerenciador
         NivelResposta = 1;
         ProximaQuestao();
     }
-    public Gerenciador(Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05)
+    public Gerenciador(Label labelNivel, Label labelPontuacao, Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05)
     {
         CriarQuestoes(labelPergunta, buttonResposta01, buttonResposta02, buttonResposta03, buttonResposta04, buttonResposta05);
+        this.labelNivel = labelNivel;
+        this.labelPontuacao = labelPontuacao;
     }
 
     void CriarQuestoes(Label labelPergunta, Button buttonResposta01, Button buttonResposta02, Button buttonResposta03, Button buttonResposta04, Button buttonResposta05){
@@ -1263,17 +1265,14 @@ public class Gerenciador
    public void ProximaQuestao()
    {
 
-        var listaQuestoes = listaTodasQuestoes.Where(d => d.NivelResposta == NivelResposta).ToList();
-        var numRandom = Random.Shared.Next(0, listaQuestoes.Count - 1);
-        var NovaQuestao = listaQuestoes[numRandom];
-
-        while(listaTodasQuestaoRespondidas.Contains(NovaQuestao))
+        var NumRodomico = Random.Shared.Next(0, listaTodasQuestoes.Count);
+        while (listaTodasQuestaoRespondidas.Contains(NumRodomico))
         {
-            numRandom = Random.Shared.Next(0,listaQuestoes.Count - 1);
-            NovaQuestao = listaQuestoes[numRandom];
-        } 
-        listaTodasQuestaoRespondidas.Add(NovaQuestao);
-        questaoAtual = NovaQuestao;
+            NumRodomico = Random.Shared.Next(0, listaTodasQuestoes.Count);
+        }
+
+        listaTodasQuestaoRespondidas.Add(NumRodomico);
+        questaoAtual = listaTodasQuestoes[NumRodomico];
         questaoAtual.Desenhar();
     }
 
